@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>The Windows Never Released Website</TITLE>
+<script type = 'text/javascript'>
+alert("You don't have access to that yet. To have access, you must complete this captcha. This is used to prevent bots from viewing the website.")
+
+
+</script>
+
+<br>
+<img src='https://github.com/Venus5687/wnr/raw/master/captcha.png'alt='Captcha' />
+<script type = 'text/javascript'>
+function testResults (form) {
+    if (form.answer.value == "Windows 10") {
+        window.location = 'https://venus5687.github.io/wnr/wnr.html';
+    }
+    else {
+        window.alert("Try again!");
+    }  
+    return false;
+};
+</script>
+<br>
+<form>
+    <label>What's written on it?</label><br>
+    <input name="answer" type="text"><br>
+    <button name="res" onclick='testResults(this.form)'>Go!</button>
+</form>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>
